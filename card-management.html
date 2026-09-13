@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card management | Invest</title>
+    <link rel="icon" type="image/png" href="./invest-asset/logo.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+    <link rel="stylesheet" href="card-management.css">
+</head>
+<body>
+    <header class="management-header">
+        <a class="brand" href="investment.html"><img src="invest-asset/logo.png" alt="Invest"> <span>invest</span></a>
+        <a class="back-link" href="investment.html"><i class="uil uil-arrow-left"></i> Dashboard</a>
+    </header>
+
+    <main class="management-board" id="cardManagementBoard">
+        <a class="board-back" href="investment.html"><i class="uil uil-arrow-left"></i> Back to dashboard</a>
+        <div class="board-heading">
+            <div>
+                <p class="eyebrow">Card management</p>
+                <h1 id="managementTitle">Your card</h1>
+                <p class="board-copy">Review your card details and manage its status.</p>
+            </div>
+            <span class="status-badge" id="managementStatus"></span>
+        </div>
+
+        <section class="management-layout" aria-label="Card management">
+            <article class="management-card" id="managementCard"></article>
+            <section class="details-board">
+                <p class="eyebrow">Card details</p>
+                <h2>Account information</h2>
+                <div class="details-grid">
+                    <div><small>Serial number</small><strong id="serialNumber"></strong></div>
+                    <div><small>Expiry</small><strong id="expiry"></strong></div>
+                    <div><small>CVV</small><strong id="cvv"></strong></div>
+                    <div><small>Cardholder</small><strong id="cardholder"></strong></div>
+                </div>
+                <div class="management-actions">
+                    <button type="button" class="primary-action" id="toggleCardButton"></button>
+                    <button type="button" class="danger-action" id="deleteCardButton"><i class="uil uil-trash-alt"></i> Delete card</button>
+                </div>
+                <p class="action-feedback" id="actionFeedback" role="status"></p>
+            </section>
+        </section>
+    </main>
+
+    <script src="card-management.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest</title>
+    <link rel="icon" type="image/png" href="./invest-asset/logo.png">
+   <link rel="stylesheet" href="investment.css">
+   <link rel="stylesheet" href="invest-transaction.css">
+
+    <!-- iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+</head>
+   <body>
+        <nav>
+            <div class="container nav__container">
+                <a href="./investment.html" class="nav__logo">
+                    <img src="invest-asset/logo.png" alt="">
+                </a>
+                <div class="nav__search">
+                    <i class="uil uil-search"></i>
+                    <input type="search" placeholder="Search">
+                </div>
+                <div class="nav__profile-wrapper">
+                    <button class="nav__theme-btn">
+                            <i class="uil uil-moon"></i>
+                    </button>
+                    <div class="nav__profile">
+                        <div class="nav__profile-photo">
+                            <img src="invest-asset/profile-1.jpg" alt="profile-photo">
+                        </div>
+                    </div>
+                    <h5>Mr Chris</h5>   
+                    <i class="uil uil-angle-down"></i>
+                    <button class="nav__menu-btn">
+                        <i class="uil uil-bars"></i>
+                    </button>
+                </div> 
+            </div>
+        </nav> 
+        <!--===================Sidebar======================-->
+        <menu class="sidebar">
+            <a href="investment.html">
+                <i class=" uil uil-create-dashboard"></i>
+                <h5>Dashboard</h5>
+            </a>
+            <a href="invest-Exchange.html">
+                <i class=" uil uil-exchange"></i>
+                <h5>Exchange</h5>
+            </a>
+            <a href="invest-wallet.html">
+                <i class=" uil-wallet"></i>
+                <h5>Wallet</h5>
+            </a>
+            <a href="invest-transaction.html " class="active">
+                <i class="uil-transaction"></i>
+                <h5>Transaction</h5>
+            </a>
+            <a href="invest-analytics.html">
+                <i class=" uil uil-chart"></i>
+                <h5>Analysis</h5>
+            </a>
+            <a href="invest-message.html">
+                <i class="uil uil-envelopes"></i>
+                <h5>Message</h5>
+            </a>
+            <a href="invest-helpCenter.html">
+                <i class="uil uil-Question-cicle"></i>
+                <h5>Help Center</h5>
+            </a>
+            <a href="invest-settings.html">
+                <i class="uil uil-setting"></i>
+                <h5>Settings</h5>
+            </a>
+            <button class="sidebar__close-btn">
+                <i class="uil uil-multiply"></i>
+            </button>
+        </menu>
+
+        <section class="transaction-history-intro">
+            <p class="transaction-send__eyebrow">Wallet activity</p>
+            <h2>Transaction history</h2>
+            <p class="transaction-send__hint">A complete record of deposits, transfers, conversions, and wallet fees.</p>
+        </section>
+
+        <table class="transactionsTable">
+            <thead>
+                <tr>
+                    <th>Transaction ID</th>
+                    <th>Date</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Coin</th>
+                    <th>Amount</th>
+                    <th>Note</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="transactionHistoryBody">
+                <!-- Account transactions are rendered here. -->
+
+            </tbody>
+        </table>
+
+
+
+
+
+
+        <script src="investment.js"></script>
+   </body>
+</html>   

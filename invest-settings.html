@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest</title>
+    <link rel="icon" type="image/png" href="./invest-asset/logo.png">
+   <link rel="stylesheet" href="investment.css">
+   <link rel="stylesheet" href="invest-settings.css">
+
+    <!-- iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+</head>
+   <body>
+        <nav>
+            <div class="container nav__container">
+                <a href="./investment.html" class="nav__logo">
+                    <img src="invest-asset/logo.png" alt="">
+                </a>
+                <div class="nav__search">
+                    <i class="uil uil-search"></i>
+                    <input type="search" placeholder="Search">
+                </div>
+                <div class="nav__profile-wrapper">
+                    <button class="nav__theme-btn">
+                            <i class="uil uil-moon"></i>
+                    </button>
+                    <div class="nav__profile">
+                        <div class="nav__profile-photo">
+                            <img src="invest-asset/profile-1.jpg" alt="profile-photo">
+                        </div>
+                    </div>
+                    <h5>Mr Chris</h5>   
+                    <i class="uil uil-angle-down"></i>
+                    <button class="nav__menu-btn">
+                        <i class="uil uil-bars"></i>
+                    </button>
+                </div> 
+            </div>
+        </nav> 
+        <!--===================Sidebar======================-->
+        <menu class="sidebar">
+            <a href="investment.html">
+                <i class=" uil uil-create-dashboard"></i>
+                <h5>Dashboard</h5>
+            </a>
+            <a href="invest-Exchange.html">
+                <i class=" uil uil-exchange"></i>
+                <h5>Exchange</h5>
+            </a>
+            <a href="invest-wallet.html">
+                <i class=" uil-wallet"></i>
+                <h5>Wallet</h5>
+            </a>
+            <a href="invest-transaction.html">
+                <i class="uil-transaction"></i>
+                <h5>Transaction</h5>
+            </a>
+            <a href="invest-analytics.html">
+                <i class=" uil uil-chart"></i>
+                <h5>Analysis</h5>
+            </a>
+            <a href="invest-message.html">
+                <i class="uil uil-envelopes"></i>
+                <h5>Message</h5>
+            </a>
+            <a href="invest-helpCenter.html">
+                <i class="uil uil-Question-cicle"></i>
+                <h5>Help Center</h5>
+            </a>
+            <a href="invest-settings.html" class="active">
+                <i class="uil uil-setting"></i>
+                <h5>Settings</h5>
+            </a>
+            <button class="sidebar__close-btn">
+                <i class="uil uil-multiply"></i>
+            </button>
+        </menu>
+         <!-- ======================settings cards====================== -->
+        <section class="settings section">
+            <div class="container settings__container">
+                        <div class="settings__header">
+                    <div>
+                        <h2>Account Settings</h2>
+                        <p>Manage your account, security, notifications, and interface preferences.</p>
+                    </div>
+                    <div class="settings__actions">
+                        <button class="btn btn--secondary" type="button" id="settingsCancel">Cancel</button>
+                        <button class="btn btn--primary" type="button" id="settingsSave">Save Changes</button>
+                    </div>
+                    <p class="settings-status" id="settingsStatus" role="status"></p>
+                </div>
+
+                <div class="settings__cards">
+                    <div class="settings__card">
+                        <h3>Profile</h3>
+                        <div class="settings__field">
+                            <label>Full Name</label>
+                            <input type="text" value="Mr Chris" data-profile-name data-setting="name">
+                        </div>
+                        <div class="settings__field">
+                            <label>Email</label>
+                            <input type="email" value="chris@example.com" data-setting="email">
+                        </div>
+                        <div class="settings__field">
+                            <label>Phone</label>
+                            <input type="tel" value="+1 234 567 890" data-setting="phone">
+                        </div>
+                    </div>
+
+                    <div class="settings__card">
+                        <h3>Security</h3>
+                        <div class="settings__field">
+                            <label>Login password</label>
+                            <button class="btn btn--outline" type="button" id="changePassword">Change password</button>
+                        </div>
+                        <div class="settings__field toggle-field">
+                            <div>
+                                <label>Two-factor authentication</label>
+                                <p>Protect your account with an extra layer of security.</p>
+                            </div>
+                            <label class="toggle">
+                                <input type="checkbox" data-setting="twoFactor">
+                                <span class="toggle__slider"></span>
+                            </label>
+                        </div>
+                        <div class="settings__field toggle-field">
+                            <div>
+                                <label>Withdrawal whitelist</label>
+                                <p>Allow withdrawals only to trusted addresses.</p>
+                            </div>
+                            <label class="toggle">
+                                <input type="checkbox" data-setting="withdrawalWhitelist">
+                                <span class="toggle__slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings__cards">
+                    <div class="settings__card">
+                        <h3>Notifications</h3>
+                        <div class="settings__field toggle-field">
+                            <div>
+                                <label>Email alerts</label>
+                                <p>Receive important account updates by email.</p>
+                            </div>
+                            <label class="toggle">
+                                <input type="checkbox" data-setting="emailAlerts">
+                                <span class="toggle__slider"></span>
+                            </label>
+                        </div>
+                        <div class="settings__field toggle-field">
+                            <div>
+                                <label>Trade notifications</label>
+                                <p>Get notified about executed orders and margin calls.</p>
+                            </div>
+                            <label class="toggle">
+                                <input type="checkbox" data-setting="tradeNotifications">
+                                <span class="toggle__slider"></span>
+                            </label>
+                        </div>
+                        <div class="settings__field toggle-field">
+                            <div>
+                                <label>Promotional messages</label>
+                                <p>Receive offers and news from the platform.</p>
+                            </div>
+                            <label class="toggle">
+                                <input type="checkbox" data-setting="promotionalMessages">
+                                <span class="toggle__slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="settings__card">
+                        <h3>Interface</h3>
+                        <div class="settings__field">
+                            <label>Theme</label>
+                            <select data-setting="theme" id="settingsTheme">
+                                <option value="dark">Dark</option>
+                                <option value="light">Light</option>
+                            </select>
+                        </div>
+                        <div class="settings__field">
+                            <label>Default dashboard</label>
+                            <select data-setting="defaultDashboard">
+                                <option value="investment.html">Spot Trading</option>
+                                <option value="investment.html">Derivatives</option>
+                                <option value="invest-wallet.html">Wallet Overview</option>
+                            </select>
+                        </div>
+                        <div class="settings__field">
+                            <label>Language</label>
+                            <select id="languageSelect" aria-label="Language">
+                                <option value="en">English</option>
+                                <option value="es">Español</option>
+                                <option value="fr">Français</option>
+                                <option value="de">Deutsch</option>
+                                <option value="pt">Português</option>
+                                <option value="zh">中文</option>
+                                <option value="ar">العربية</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <script src="investment.js"></script>
+   </body>
+</html>

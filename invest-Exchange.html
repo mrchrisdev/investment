@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest</title>
+    <link rel="icon" type="image/png" href="./invest-asset/logo.png">
+    <link rel="stylesheet" href="investment.css">
+    <link rel="stylesheet" href="invest-Exchange.css">
+
+    <!-- iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+</head>
+   <body>
+        <nav>
+            <div class="container nav__container">
+                <a href="./investment.html" class="nav__logo">
+                    <img src="invest-asset/logo.png" alt="">
+                </a>
+                <div class="nav__search">
+                    <i class="uil uil-search"></i>
+                    <input type="search" placeholder="Search">
+                </div>
+                <div class="nav__profile-wrapper">
+                    <button class="nav__theme-btn">
+                            <i class="uil uil-moon"></i>
+                    </button>
+                    <div class="nav__profile">
+                        <div class="nav__profile-photo">
+                            <img src="invest-asset/profile-1.jpg" alt="profile-photo">
+                        </div>
+                    </div>
+                    <h5>Mr Chris</h5>   
+                    <i class="uil uil-angle-down"></i>
+                    <button class="nav__menu-btn">
+                        <i class="uil uil-bars"></i>
+                    </button>
+                </div> 
+            </div>
+        </nav> 
+        <!--===================Sidebar======================-->
+        <menu class="sidebar">
+            <a href="investment.html">
+                <i class=" uil uil-create-dashboard"></i>
+                <h5>Dashboard</h5>
+            </a>
+            <a href="invest-Exchange.html" class="active">
+                <i class=" uil uil-exchange"></i>
+                <h5>Exchange</h5>
+            </a>
+            <a href="invest-wallet.html">
+                <i class=" uil-wallet"></i>
+                <h5>Wallet</h5>
+            </a>
+            <a href="invest-transaction.html">
+                <i class="uil-transaction"></i>
+                <h5>Transaction</h5>
+            </a>
+            <a href="invest-analytics.html">
+                <i class=" uil uil-chart"></i>
+                <h5>Analysis</h5>
+            </a>
+            <a href="invest-message.html">
+                <i class="uil uil-envelopes"></i>
+                <h5>Message</h5>
+            </a>
+            <a href="invest-helpCenter.html">
+                <i class="uil uil-Question-cicle"></i>
+                <h5>Help Center</h5>
+            </a>
+            <a href="invest-settings.html">
+                <i class="uil uil-setting"></i>
+                <h5>Settings</h5>
+            </a>
+            <button class="sidebar__close-btn">
+                <i class="uil uil-multiply"></i>
+            </button>
+        </menu>
+
+
+<main class="exchange-page">
+            <header class="page-header exchange-header">
+                <div>
+                    <p class="page-eyebrow">Markets</p>
+                    <h1>Exchange</h1>
+                </div>
+                <div class="status-pill"><span></span> Markets open</div>
+            </header>
+
+            <section class="exchange-layout">
+                <article class="market-panel" id="exchangeMainPanel">
+                    <div class="pair-header">
+                        <div class="pair-icon" id="exchangePairIcon">BTC</div>
+                        <div>
+                            <h2 id="exchangePairTitle">BTC / USD</h2>
+                            <small id="exchangePairSubtitle">Bitcoin vs US Dollar</small>
+                        </div>
+                        <span class="trend positive" id="exchangePriceChange">+2.38%</span>
+                    </div>
+
+                    <div class="price-row">
+                        <h3 id="exchangePriceValue">$68,435.12</h3>
+                        <span id="exchangeRangeValue">24h range: $67,540 - $69,230</span>
+                    </div>
+
+                    <div class="market-chart">
+                        <span style="height: 18%"></span>
+                        <span style="height: 30%"></span>
+                        <span style="height: 28%"></span>
+                        <span style="height: 42%"></span>
+                        <span style="height: 35%"></span>
+                        <span style="height: 62%"></span>
+                        <span style="height: 54%"></span>
+                        <span style="height: 66%"></span>
+                        <span style="height: 74%"></span>
+                        <span style="height: 85%"></span>
+                        <span style="height: 72%"></span>
+                        <span style="height: 82%"></span>
+                    </div>
+
+                    <div class="trade-form-wrap">
+                        <form class="trade-form">
+                            <label>
+                                <span>You pay</span>
+                                <div class="trade-input">
+                                    <input id="exchangePayAmount" type="number" value="0.42" step="0.01" min="0">
+                                    <strong>BTC</strong>
+                                </div>
+                            </label>
+                            <label>
+                                <span>You receive</span>
+                                <div class="trade-input">
+                                    <input id="exchangeReceiveAmount" type="number" value="28791.32" step="0.01" min="0">
+                                    <strong>USD</strong>
+                                </div>
+                            </label>
+                            <div class="trade-meta">
+                                <span>Rate</span>
+                                <strong id="exchangeRateValue">1 BTC = $68,436.12</strong>
+                            </div>
+                            <button type="button" class="primary-action">Review order</button>
+                        </form>
+                    </div>
+                </article>
+
+                <aside class="market-table-panel">
+                    <div class="panel-header">
+                        <h2>Market pairs</h2>
+                        <button type="button">View all</button>
+                    </div>
+
+                    <div class="market-table">
+                        <div class="market-row" data-coin="btc">
+                            <div class="market-name"><span class="coin coin-btc">₿</span><strong>BTC/USD</strong></div>
+                            <span class="market-price">$68,435</span>
+                            <span class="trend positive">+2.38%</span>
+                        </div>
+                        <div class="market-row" data-coin="eth">
+                            <div class="market-name"><span class="coin coin-eth">Ξ</span><strong>ETH/USD</strong></div>
+                            <span class="market-price">$3,620</span>
+                            <span class="trend positive">+1.92%</span>
+                        </div>
+                        <div class="market-row" data-coin="sol">
+                            <div class="market-name"><span class="coin coin-sol">S</span><strong>SOL/USD</strong></div>
+                            <span class="market-price">$162.40</span>
+                            <span class="trend positive">+4.11%</span>
+                        </div>
+                        <div class="market-row" data-coin="doge">
+                            <div class="market-name"><span class="coin coin-doge">Ð</span><strong>DOGE/USD</strong></div>
+                            <span class="market-price">$0.171</span>
+                            <span class="trend negative">-0.64%</span>
+                        </div>
+                        <div class="market-row" data-coin="ada">
+                            <div class="market-name"><span class="coin coin-cardano">A</span><strong>ADA/USD</strong></div>
+                            <span class="market-price">$0.723</span>
+                            <span class="trend positive">+0.87%</span>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="mini-market-grid">
+                <article class="mini-market-card">
+                    <small>Top mover</small>
+                    <h3>SOL</h3>
+                    <strong>$162.40</strong>
+                    <span class="trend positive">+4.11%</span>
+                </article>
+                <article class="mini-market-card">
+                    <small>Market cap</small>
+                    <h3>$2.4T</h3>
+                    <strong>Crypto Index</strong>
+                    <span class="trend positive">+1.74%</span>
+                </article>
+                <article class="mini-market-card">
+                    <small>Fastest gainer</small>
+                    <h3>FET</h3>
+                    <strong>$1.34</strong>
+                    <span class="trend positive">+7.20%</span>
+                </article>
+                <article class="mini-market-card">
+                    <small>Volume</small>
+                    <h3>$28.1B</h3>
+                    <strong>24h turnover</strong>
+                    <span class="trend neutral">Stable</span>
+                </article>
+            </section>
+        </main>
+
+        <script src="https://s3.tradingview.com/tv.js"></script>
+            <script src="investment.js"></script>
+   </body>
+</html>  

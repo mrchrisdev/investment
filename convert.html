@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert | Invest</title>
+    <link rel="icon" type="image/png" href="./invest-asset/logo.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+    <link rel="stylesheet" href="convert.css">
+</head>
+<body>
+    <header class="convert-header">
+        <a class="brand" href="investment.html"><img src="invest-asset/logo.png" alt="Invest"><span>invest</span></a>
+        <a class="back-link" href="invest-wallet.html"><i class="uil uil-arrow-left"></i> Wallet</a>
+    </header>
+
+    <main class="convert-shell">
+        <a class="return-link" href="invest-wallet.html"><i class="uil uil-arrow-left"></i> Back to wallet</a>
+        <section class="convert-intro">
+            <div>
+                <p class="eyebrow">Wallet exchange</p>
+                <h1>Convert with clarity.</h1>
+                <p>Move part or all of one funded currency into another currency already held in your wallet.</p>
+            </div>
+            <div class="live-indicator"><span></span> Live market rates</div>
+        </section>
+
+        <section class="convert-layout">
+            <form class="convert-card" id="convertForm">
+                <div class="field-row">
+                    <label>
+                        <span>From</span>
+                        <select name="from" id="convertFrom" required></select>
+                        <small id="fromBalance"></small>
+                    </label>
+                    <button class="swap-button" id="swapCurrencies" type="button" aria-label="Swap currencies" title="Swap currencies"><i class="uil uil-exchange"></i></button>
+                    <label>
+                        <span>To</span>
+                        <select name="to" id="convertTo" required></select>
+                        <small id="toBalance"></small>
+                    </label>
+                </div>
+                <label class="amount-field">
+                    <span>Amount to convert</span>
+                    <div class="amount-input"><input type="number" name="amount" id="convertAmount" min="0.00000001" step="any" required><strong id="amountUnit"></strong></div>
+                    <button type="button" id="maxAmount">Use maximum</button>
+                </label>
+                <div class="rate-preview" id="ratePreview"><span>Conversion rate</span><strong>Enter an amount to preview</strong></div>
+                <button class="convert-submit" type="submit"><i class="uil uil-update"></i> Convert currency</button>
+                <p class="feedback" id="convertFeedback" role="status"></p>
+            </form>
+
+            <aside class="wallet-summary">
+                <p class="eyebrow">Your wallet</p>
+                <h2>Funded currencies</h2>
+                <div id="fundedList"></div>
+                <p class="summary-note">You can convert into any supported wallet currency, including currencies with a zero balance.</p>
+            </aside>
+        </section>
+    </main>
+    <script src="convert.js"></script>
+</body>
+</html>

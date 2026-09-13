@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest | Build your financial future</title>
+    <link rel="icon" type="image/png" href="./invest-asset/logo.png">
+    <link rel="stylesheet" href="welcome.css">
+
+    <!-- iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+</head>
+<body>
+    <div class="welcome-shell">
+        <!-- Main navigation -->
+        <nav class="welcome-nav">
+            <a href="invest-first__page.html" class="brand" aria-label="Invest home">
+                <img src="invest-asset/logo.png" alt="Invest">
+                <span>invest</span>
+            </a>
+            <div class="nav-links" aria-label="Main navigation">
+                <a href="#markets">Markets</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#trust">Why Invest</a>
+            </div>
+            <div class="nav-actions">
+                <button class="text-button" type="button" data-auth="login">Log in</button>
+                <button class="button button--small" type="button" data-auth="signup">Create account</button>
+            </div>
+        </nav>
+
+        <!-- Main page content -->
+        <main>
+            <!-- Hero section -->
+            <section class="hero">
+                <div class="hero__copy">
+                    <p class="eyebrow"><span class="eyebrow__dot"></span> A calmer way to invest</p>
+                    <h1>Make every market move feel <em>clear.</em></h1>
+                    <p class="hero__intro">One thoughtful workspace for tracking your money, understanding the market, and investing with confidence.</p>
+                    <div class="hero__actions">
+                        <button class="button" type="button" data-auth="signup">Start investing <i class="uil uil-arrow-up-right"></i></button>
+                        <button class="link-button" type="button" data-auth="login">I already have an account <i class="uil uil-arrow-right"></i></button>
+                    </div>
+                    <div class="hero__proof"><span><i class="uil uil-shield-check"></i> Bank-level security</span><span><i class="uil uil-chart-growth"></i> Real-time insights</span></div>
+                </div>
+                <div class="hero__visual" aria-label="Market performance preview">
+                    <div class="visual__glow"></div>
+                    <div class="market-card">
+                        <div class="market-card__top"><div><span class="label">Portfolio pulse</span><strong>Markets are moving</strong></div><span class="live-status"><i></i> Live</span></div>
+                        <div class="market-card__value"><strong>+12.84%</strong><span>this month <i class="uil uil-arrow-up"></i></span></div>
+                        <div class="chart" aria-hidden="true"><span style="height: 34%"></span><span style="height: 42%"></span><span style="height: 38%"></span><span style="height: 56%"></span><span style="height: 49%"></span><span style="height: 67%"></span><span style="height: 61%"></span><span style="height: 79%"></span><span style="height: 72%"></span><span style="height: 94%"></span></div>
+                        <div class="chart__labels"><span>May 01</span><span>Today</span></div>
+                    </div>
+                    <div class="floating-stat floating-stat--green"><span class="stat-icon"><i class="uil uil-bitcoin"></i></span><div><b>Bitcoin</b><small>$68,421.08 <strong>+4.62%</strong></small></div></div>
+                    <div class="floating-stat floating-stat--cream"><span class="stat-icon"><i class="uil uil-chart-growth"></i></span><div><b>Smart insights</b><small>3 new signals</small></div></div>
+                </div>
+            </section>
+
+            <!-- Market overview section -->
+            <section class="market-strip" id="markets">
+                <div class="section-heading"><div><p class="eyebrow">Market analysis</p><h2>See the bigger picture before you invest.</h2></div><a href="#how-it-works" class="view-link">Explore the platform <i class="uil uil-arrow-right"></i></a></div>
+                <div class="market-grid">
+                    <article class="market-tile"><div class="tile__name"><span class="coin coin--orange">B</span><div><b>Bitcoin</b><small>BTC / USD</small></div></div><strong>$68,421.08</strong><span class="positive">+4.62%</span></article>
+                    <article class="market-tile"><div class="tile__name"><span class="coin coin--blue">E</span><div><b>Ethereum</b><small>ETH / USD</small></div></div><strong>$3,842.19</strong><span class="positive">+2.18%</span></article>
+                    <article class="market-tile"><div class="tile__name"><span class="coin coin--teal">S</span><div><b>S&amp;P 500</b><small>INDEX</small></div></div><strong>5,412.68</strong><span class="positive">+0.84%</span></article>
+                    <article class="market-tile"><div class="tile__name"><span class="coin coin--pink">N</span><div><b>Nasdaq</b><small>INDEX</small></div></div><strong>17,608.44</strong><span class="negative">-0.31%</span></article>
+                </div>
+            </section>
+
+            <!-- Features section -->
+            <section class="features" id="how-it-works">
+                <div class="feature-intro"><p class="eyebrow">Everything starts here</p><h2>Tools that help you move at your own pace.</h2><p>New to investing or refining your strategy? Invest gives you the context to make decisions that fit your goals.</p></div>
+                <article class="feature"><span class="feature__number">01</span><i class="uil uil-chart-bar"></i><h3>Understand your money</h3><p>See your portfolio, performance, and spending patterns in one focused view.</p></article>
+                <article class="feature"><span class="feature__number">02</span><i class="uil uil-lightbulb-alt"></i><h3>Find your next move</h3><p>Follow market signals and compare assets with simple, useful analysis.</p></article>
+                <article class="feature"><span class="feature__number">03</span><i class="uil uil-lock"></i><h3>Stay in control</h3><p>Set your preferences, protect your account, and trade when it feels right.</p></article>
+            </section>
+
+            <!-- Trust section -->
+            <section class="trust-band" id="trust"><div><p class="eyebrow">Built for real life</p><h2>Investing should feel informed, not intimidating.</h2></div><div class="trust-points"><span><i class="uil uil-check-circle"></i> No account minimums</span><span><i class="uil uil-check-circle"></i> Clear, transparent pricing</span><span><i class="uil uil-check-circle"></i> Learn as you go</span></div></section>
+        </main>
+
+        <!-- Site footer -->
+        <footer class="welcome-footer"><span>© 2026 Invest</span><span>Investing involves risk. Make decisions that suit your goals.</span><a href="invest-helpCenter.html">Need help?</a></footer>
+    </div>
+
+    <!-- Authentication modal -->
+    <div class="auth-modal" id="authModal" aria-hidden="true">
+        <div class="auth-modal__backdrop" data-close-auth></div>
+        <!-- Authentication form panel -->
+        <section class="auth-panel" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+            <button class="modal-close" type="button" data-close-auth aria-label="Close"><i class="uil uil-times"></i></button>
+            <p class="eyebrow">Welcome to Invest</p><h2 id="authTitle">Start with a clearer view.</h2><p class="auth-panel__copy" id="authCopy">Create your free account and see your financial picture in one place.</p>
+            <div class="auth-tabs" role="tablist"><button type="button" class="auth-tab is-active" data-auth-tab="signup">Sign up</button><button type="button" class="auth-tab" data-auth-tab="login">Log in</button></div>
+            <form id="authForm"><label>First name<input type="text" name="name" placeholder="Your first name" required></label><label>Email address<input type="email" name="email" placeholder="name@gmail.com" autocomplete="email" required></label><label>Password<input type="password" name="password" placeholder="At least 8 characters" minlength="8" required></label><button class="button button--full" type="submit" id="authSubmit">Create free account <i class="uil uil-arrow-right"></i></button></form>
+            <p class="auth-note"><i class="uil uil-shield-check"></i> Your information is encrypted and never sold.</p><p class="auth-success" id="authSuccess" role="status"></p>
+        </section>
+    </div>
+    <!-- Page interactions -->
+    <script src="welcome.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.crypto-activity { margin: 55px auto 35px; max-width: 900px; }
+.crypto-activity h2 { margin-bottom: 16px; }
+.crypto-activity #activityList { background: var(--color-white, #fff); border: 1px solid var(--color-light, #e5e7eb); }
+.crypto-activity article { align-items: center; border-bottom: 1px solid var(--color-light, #e5e7eb); display: flex; justify-content: space-between; gap: 16px; padding: 18px 20px; }
+.crypto-activity article:last-child { border-bottom: 0; }
+.crypto-activity h3, .crypto-activity p { margin: 0; }
+.crypto-activity p { margin-top: 5px; opacity: .7; }
+.crypto-activity .incoming { color: #1d6b55; }
+.crypto-activity .outgoing { color: #bd5f55; }
+.crypto-activity .empty-state { opacity: .7; padding: 22px 20px; }
+@media (max-width: 560px) { .crypto-activity { margin: 45px 20px 25px; } .crypto-activity article { align-items: flex-start; flex-direction: column; } }
